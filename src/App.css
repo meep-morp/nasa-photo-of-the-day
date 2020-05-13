@@ -1,5 +1,18 @@
+body {
+  background: rgb(27, 6, 59);
+  color: white;
+}
+
+.header {
+  background-image: url("/images/headerImage.jpg");
+}
+
 .App {
   text-align: center;
+}
+
+.POTD img{
+  width: 75%;
 }
 
 .App-logo {
