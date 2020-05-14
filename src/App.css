@@ -13,7 +13,10 @@ body {
 
 .form {
   margin: 30px;
+  display: flex;
+  justify-content: center;
 }
+
 
 button {
   background: white;

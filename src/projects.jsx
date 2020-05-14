@@ -37,20 +37,29 @@ const Projects = props => {
                     <p>{projectData.benefits}</p>
             </div>
             <div className="form">
+            <button className="prev" onClick={event => {
+                setId(id - 1);
+            }}> &lt; </button>
             <input type="text"
-                    onChange={event => {setIdValue(parseFloat(event.target.value))}}
+                    onChange={event => {
+                            setIdValue(parseFloat(event.target.value))
+                        }}
                     placeholder="ID here..."
                     className="idInput"
+                    value={idValue}
                 />
                 <input type="submit"
                     value="Blast Off!"
                     onClick={
                         event => {
                            setId(idValue);
+                           setIdValue("");
                            event.preventDefault();
-                           console.log("submitted " + id);
                        }}
                 />
+                <button className="next" onClick={event => {
+                    setId(id + 1);
+                }}>></button>
             </div>
         </section>
     )
