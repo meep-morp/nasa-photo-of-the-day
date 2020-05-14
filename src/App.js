@@ -25,7 +25,7 @@ useEffect(() => {
   .catch(error => {
     console.log("uh-oh spaghettios")
   })
-}, [date]);
+}, [formattedDate]);
 
   return (
     <div className="App">

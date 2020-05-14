@@ -11,6 +11,18 @@ body {
   text-align: center;
 }
 
+button {
+  background: white;
+  border: none;
+  font-size: 1.4rem;
+}
+
+button:hover {
+  background-color: rgb(127, 129, 192);
+  transition: 0.2s ease;
+  color: white;
+}
+
 .calendar {
   width: 75%;
   margin: 0 auto;
