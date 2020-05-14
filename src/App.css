@@ -1,7 +1,7 @@
 body {
   /* background: rgb(27, 6, 59); */
-  background: rgb(10,74,131);
-  background: linear-gradient(25deg, rgba(10,74,131,1) 0%, rgba(27,11,71,1) 100%);
+  background: rgb(0,0,0);
+  background: linear-gradient(175deg, rgba(0,0,0,1) 0%, rgba(10,34,88,1) 72%, rgba(30,79,156,1) 100%);  
   color: white;
 }
 
