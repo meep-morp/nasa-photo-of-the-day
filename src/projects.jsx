@@ -33,7 +33,7 @@ const Projects = props => {
             <div>
                     <h3>{projectData.title}</h3>
                     <p>{projectData.description}</p>
-                    <h3>Benifits of Project</h3>
+                    <h3>Benefits of Project</h3>
                     <p>{projectData.benefits}</p>
             </div>
             <div className="form">

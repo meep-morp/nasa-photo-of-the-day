@@ -17,6 +17,10 @@ body {
   justify-content: center;
 }
 
+.form button {
+  background-color: transparent;
+  color: white;
+}
 
 button {
   background: white;
