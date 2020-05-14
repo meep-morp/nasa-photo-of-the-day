@@ -11,6 +11,10 @@ body {
   text-align: center;
 }
 
+.form {
+  margin: 30px;
+}
+
 button {
   background: white;
   border: none;
