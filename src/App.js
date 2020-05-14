@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./CSS/tailwind.css";
 import Header from "./Header";
 import Projects from "./projects";
 import ImageContainer from "./POTD";
 import Footer from "./Footer";
-import "./App.css";
 
 function App() {
 
@@ -29,20 +29,20 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <Header />
-      <ImageContainer 
-        apiData={apiData} 
-        date={date}
-        setDate={setDate}
+        <Header />
+        <ImageContainer 
+          apiData={apiData} 
+          date={date}
+          setDate={setDate}
+          />
+          <p>&mdash;</p>
+        <Projects 
+          id={id}
+          setId={setId}
+          projectData={projectData}
+          setProjectData={setProjectData}
         />
-        <p>&mdash;</p>
-      <Projects 
-        id={id}
-        setId={setId}
-        projectData={projectData}
-        setProjectData={setProjectData}
-      />
-      <Footer />
+        <Footer />
     </div>
   );
 }

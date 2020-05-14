@@ -17,8 +17,8 @@ const ImageContainer = props => {
                 <h2>NASA Photo of the Day</h2>
                 <h3>{(date.getMonth() + 1)} / {date.getDate()} / {date.getFullYear()}</h3>
             </div>
-            <div>
-                <img src={apiData.url} alt="NASA Photo of the day"/>
+            <div className="flex justify-center">
+                <img src={apiData.url} alt="NASA Photo of the day" />
             </div>
             <div>
                 <h2>{apiData.title}</h2>
@@ -26,10 +26,10 @@ const ImageContainer = props => {
             </div>
             <div>
                 <h2>Choose another date:</h2>
-                <Calendar className="calendar" onChange={onChange} value={date} />
+                <Calendar className="calendar text-black" onChange={onChange} value={date} />
             </div>
         </section>
     )
 }
 
-export default ImageContainer;
+export default ImageContainer; 

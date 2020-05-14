@@ -45,10 +45,11 @@ const Projects = props => {
                             setIdValue(parseFloat(event.target.value))
                         }}
                     placeholder="ID here..."
-                    className="idInput"
+                    className="idInput text-black"
                     value={idValue}
                 />
                 <input type="submit"
+                    className="text-black cursor-pointer bg-white"
                     value="Blast Off!"
                     onClick={
                         event => {
