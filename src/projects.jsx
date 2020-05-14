@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
+import Button from '@material-ui/core/Button';
 
 
 const Projects = props => {
@@ -31,13 +32,13 @@ const Projects = props => {
                 <h2 className="font-bold text-2xl">NASA Projects</h2>
             </div>
             <div>
-                    <h3>{projectData.title}</h3>
+                    <h3 className="font-bold text-xl" text-xl>{projectData.title}</h3>
                     <p>{projectData.description}</p>
                     <h3 className="font-bold text-xl">Benefits of Project</h3>
                     <p>{projectData.benefits}</p>
             </div>
             <div className="form">
-            <button className="prev" onClick={event => {
+            <button className="prev p-2" onClick={event => {
                 setId(id - 1);
             }}> &lt; </button>
             <input type="text"
@@ -48,17 +49,16 @@ const Projects = props => {
                     className="idInput text-black"
                     value={idValue}
                 />
-                <input type="submit"
+                <Button 
                     className="text-black cursor-pointer"
-                    value="Blast Off!"
                     onClick={
                         event => {
                            setId(idValue);
                            setIdValue("");
                            event.preventDefault();
                        }}
-                />
-                <button className="next" onClick={event => {
+                >Blast Off!</Button>
+                <button className="next p-2" onClick={event => {
                     setId(id + 1);
                 }}>></button>
             </div>
