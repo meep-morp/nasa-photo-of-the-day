@@ -9,7 +9,6 @@ const ImageContainer = props => {
     
     const onChange = date => {
         setDate(date)
-        console.log(date);
     }
 
     return (
@@ -19,7 +18,7 @@ const ImageContainer = props => {
                 <h3>{(date.getMonth() + 1)} / {date.getDate()} / {date.getFullYear()}</h3>
             </div>
             <div>
-                <img src={apiData.hdurl} alt="NASA Photo of the day"/>
+                <img src={apiData.url} alt="NASA Photo of the day"/>
             </div>
             <div>
                 <h2>{apiData.title}</h2>
