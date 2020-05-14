@@ -28,12 +28,12 @@ const Projects = props => {
     return (
         <section className="POTD">
             <div>
-                <h2>NASA Projects</h2>
+                <h2 className="font-bold text-2xl">NASA Projects</h2>
             </div>
             <div>
                     <h3>{projectData.title}</h3>
                     <p>{projectData.description}</p>
-                    <h3>Benefits of Project</h3>
+                    <h3 className="font-bold text-xl">Benefits of Project</h3>
                     <p>{projectData.benefits}</p>
             </div>
             <div className="form">
@@ -49,7 +49,7 @@ const Projects = props => {
                     value={idValue}
                 />
                 <input type="submit"
-                    className="text-black cursor-pointer bg-white"
+                    className="text-black cursor-pointer"
                     value="Blast Off!"
                     onClick={
                         event => {

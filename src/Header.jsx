@@ -5,7 +5,7 @@ const Header = props => {
         <section className="header">
             <img src="images/nasaLogo.png" alt=""/>
             <div>
-                <h1>NASA APIS</h1>
+                <h1 className="font-bold text-3xl">NASA APIS</h1>
             </div>
         </section>
     )

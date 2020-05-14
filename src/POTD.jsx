@@ -14,18 +14,18 @@ const ImageContainer = props => {
     return (
         <section className="POTD">
             <div>
-                <h2>NASA Photo of the Day</h2>
-                <h3>{(date.getMonth() + 1)} / {date.getDate()} / {date.getFullYear()}</h3>
+                <h2 className="font-bold text-2xl">NASA Photo of the Day</h2>
+                <h3 className="font-bold text-xl">{(date.getMonth() + 1)} / {date.getDate()} / {date.getFullYear()}</h3>
             </div>
             <div className="flex justify-center">
                 <img src={apiData.url} alt="NASA Photo of the day" />
             </div>
             <div>
-                <h2>{apiData.title}</h2>
+                <h2 className="font-bold text-2xl">{apiData.title}</h2>
                 <p>{apiData.explanation}</p>
             </div>
             <div>
-                <h2>Choose another date:</h2>
+                <h3 className="font-bold text-xl">Choose another date:</h3>
                 <Calendar className="calendar text-black" onChange={onChange} value={date} />
             </div>
         </section>
