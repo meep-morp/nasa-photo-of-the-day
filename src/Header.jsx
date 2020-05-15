@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = props => {
     return (
-        <section className="header">
+        <section className="header animations.jump">
             <img src="images/nasaLogo.png" alt=""/>
             <div>
                 <h1 className="font-bold text-3xl">NASA APIS</h1>

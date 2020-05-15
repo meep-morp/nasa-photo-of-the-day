@@ -46,7 +46,7 @@ const Projects = props => {
                             setIdValue(parseFloat(event.target.value))
                         }}
                     placeholder="ID here..."
-                    className="idInput text-black"
+                    className="text-black"
                     value={idValue}
                 />
                 <Button 
@@ -57,7 +57,7 @@ const Projects = props => {
                            event.preventDefault();
                        }}
                 >Blast Off!</Button>
-                <button className="next p-2" onClick={event => {
+                <button className="next p-2 hover:bg-white" onClick={event => {
                     setId(id + 1);
                 }}>></button>
             </div>
