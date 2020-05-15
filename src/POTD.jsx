@@ -26,7 +26,7 @@ const ImageContainer = props => {
             </div>
             <div>
                 <h3 className="font-bold text-xl">Choose another date:</h3>
-                <Calendar className="calendar text-black" onChange={onChange} value={date} />
+                <Calendar className="calendar text-black text-xl p-5 hover:text-white bg-lavendar" onChange={onChange} value={date} />
             </div>
         </section>
     )

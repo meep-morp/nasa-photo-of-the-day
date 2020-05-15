@@ -50,7 +50,6 @@ const Projects = props => {
                     value={idValue}
                 />
                 <Button 
-                    className="text-black cursor-pointer"
                     onClick={
                         event => {
                            setId(idValue);

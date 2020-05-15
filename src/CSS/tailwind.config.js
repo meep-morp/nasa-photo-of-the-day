@@ -1,4 +1,5 @@
 module.exports = {
+  prefix: false,
   purge: [],
   theme: {
     colors: {

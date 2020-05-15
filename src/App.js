@@ -28,7 +28,7 @@ useEffect(() => {
 }, [formattedDate]);
 
   return (
-    <div className="App">
+    <div className="App flex flex-col justify-center align-center w-4/5 text-center">
         <Header />
         <ImageContainer 
           apiData={apiData} 
