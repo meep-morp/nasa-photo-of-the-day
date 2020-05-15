@@ -31,14 +31,14 @@ const Projects = props => {
             <div>
                 <h2 className="font-bold text-2xl">NASA Projects</h2>
             </div>
-            <div>
-                    <h3 className="font-bold text-xl" text-xl>{projectData.title}</h3>
-                    <p>{projectData.description}</p>
+            <div className="m-3">
+                    <h3 className="font-bold text-xl m-2" text-xl>{projectData.title}</h3>
+                    <p className="m-2">{projectData.description}</p>
                     <h3 className="font-bold text-xl">Benefits of Project</h3>
-                    <p>{projectData.benefits}</p>
+                    <p className="m-2">{projectData.benefits}</p>
             </div>
-            <div className="form">
-            <button className="prev p-2" onClick={event => {
+            <div className="form m-3">
+            <button className="prev p-2 text-3xl" onClick={event => {
                 setId(id - 1);
             }}> &lt; </button>
             <input type="text"
@@ -46,10 +46,11 @@ const Projects = props => {
                             setIdValue(parseFloat(event.target.value))
                         }}
                     placeholder="ID here..."
-                    className="text-black"
+                    className="text-black h-8 p-2"
                     value={idValue}
                 />
                 <Button 
+                    className="text-white"
                     onClick={
                         event => {
                            setId(idValue);
@@ -57,7 +58,7 @@ const Projects = props => {
                            event.preventDefault();
                        }}
                 >Blast Off!</Button>
-                <button className="next p-2 hover:bg-white" onClick={event => {
+                <button className="next p-2 text-3xl hover:bg-white" onClick={event => {
                     setId(id + 1);
                 }}>></button>
             </div>

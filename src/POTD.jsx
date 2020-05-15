@@ -18,7 +18,7 @@ const ImageContainer = props => {
                 <h3 className="font-bold text-xl">{(date.getMonth() + 1)} / {date.getDate()} / {date.getFullYear()}</h3>
             </div>
             <div className="flex justify-center">
-                <img src={apiData.url} alt="NASA Photo of the day" />
+                <img src={apiData.url} alt="NASA Photo of the day" className="rounded-lg" />
             </div>
             <div>
                 <h2 className="font-bold text-2xl">{apiData.title}</h2>

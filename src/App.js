@@ -35,7 +35,7 @@ useEffect(() => {
           date={date}
           setDate={setDate}
           />
-          <p>&mdash;</p>
+            <p>&mdash;</p>
         <Projects 
           id={id}
           setId={setId}
